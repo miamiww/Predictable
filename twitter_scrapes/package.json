@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/miamiww/SoPredictable#readme",
   "dependencies": {
+    "json2csv": "^3.7.3",
     "twitter": "^1.7.1"
   }
 }
