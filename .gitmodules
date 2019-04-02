@@ -1,0 +1,3 @@
+[submodule "hawking/identity_reassignment"]
+	path = hawking/identity_reassignment
+	url = https://github.com/miamiww/identity_reassignment
