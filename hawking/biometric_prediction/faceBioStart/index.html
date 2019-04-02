@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+    var socket = io.connect('//localhost:3000');
+        //listen for data on websocket called my socket
+        socket.on('mysocket', function(data) {
+            console.log(data);
+            //Jquery has getters and setters
+            $('#incoming').text(data);
+            var today = new Date();
+            $('#facepic').attr("src","images/test_image.jpg?" + today.getTime());
+        });
+        socket.on('error', function() {
+            console.error(arguments)
+        });
+    </script>
+    <img id="facepic"/>
+    <h1 id="incoming"></h1>
+
+
+  </body>
+</html>

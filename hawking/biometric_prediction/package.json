@@ -1,0 +1,24 @@
+{
+  "name": "skybio",
+  "version": "0.5.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chokidar": "^1.6.1",
+    "express": "^4.15.2",
+    "howler": "^2.0.3",
+    "jquery": "^3.2.1",
+    "limiter": "^1.1.0",
+    "node-webcam": "^0.3.4",
+    "p5": "^0.5.8",
+    "random": "^2.1.1",
+    "skybiometry": "^1.2.1",
+    "socket.io": "^2.2.0",
+    "socket.io-client": "^2.2.0"
+  }
+}
