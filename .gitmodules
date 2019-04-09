@@ -1,3 +1,12 @@
 [submodule "hawking/identity_reassignment"]
 	path = hawking/identity_reassignment
 	url = https://github.com/miamiww/identity_reassignment
+[submodule "hawking/faces/ffhq-dataset"]
+	path = hawking/faces/ffhq-dataset
+	url = https://github.com/NVlabs/ffhq-dataset
+[submodule "hawking/faces/stylegan"]
+	path = hawking/faces/stylegan
+	url = https://github.com/NVlabs/stylegan
+[submodule "hawking/face_generator"]
+	path = hawking/face_generator
+	url = https://github.com/miamiww/face_generator.git

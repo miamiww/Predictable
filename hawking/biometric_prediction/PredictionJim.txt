@@ -1,8 +1,0 @@
-Your Name: Jim
-
-Gender: male Glasses: false Smiling: false Age: 31 Mood: neutral  Eyes: open Lips: sealed Sign: capricorn Politics: left
-
-Your Future: 
-Move ahead with all plans
-Be wary of friends who talk behind your back
-You're stuck for now; let time pass before taking action

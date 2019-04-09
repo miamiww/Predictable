@@ -6,6 +6,7 @@ const config = require('./config.js')
 const client = new skybiometry.Client(config.key1, config.key2);
 const interpretations = JSON.parse(fs.readFileSync('interpretations.json', 'utf8'));
 let characterName = process.argv[2];
+const MBTI = [["E", "I"],["N","S"],["F","T"],["P","J"]];
 
 const astrologicalSigns = ["aries", "leo", "sagittarius","taurus", "virgo", "capricorn","gemini", "libra", "aquarius","cancer", "scorpio", "pisces"];
 const politics = ["left", "left","left","right"];
@@ -417,9 +418,9 @@ const sendPicture = () => {
       //facial attributes get printed out here
       var signValue = random.int(min=0,max=11);
       var politicsValue = random.int(min=0,max=3);
-      let sendstring = "Gender: " + parsedresults.photos[0].tags[0].attributes.gender.value + " Glasses: " + parsedresults.photos[0].tags[0].attributes.glasses.value + " Smiling: " + parsedresults.photos[0].tags[0].attributes.glasses.value + " Age: " + parsedresults.photos[0].tags[0].attributes.age_est.value + " Mood: " + parsedresults.photos[0].tags[0].attributes.mood.value + "  Eyes: " + parsedresults.photos[0].tags[0].attributes.eyes.value + " Lips: " + parsedresults.photos[0].tags[0].attributes.lips.value;
+      let sendstring = "Gender: " + parsedresults.photos[0].tags[0].attributes.gender.value + "\n" + " Glasses: " + parsedresults.photos[0].tags[0].attributes.glasses.value + "\n" + " Smiling: " + parsedresults.photos[0].tags[0].attributes.glasses.value + "\n" + " Age: " + parsedresults.photos[0].tags[0].attributes.age_est.value + "\n" + " Mood: " + parsedresults.photos[0].tags[0].attributes.mood.value + "\n" + "  Eyes: " + parsedresults.photos[0].tags[0].attributes.eyes.value + "\n" + " Lips: " + parsedresults.photos[0].tags[0].attributes.lips.value;
       // console.log(sendstring);
-      let attributes = " Politics: " + politics[politicsValue] //+ " Primordial Origins: "
+      let attributes = "\n" + " Politics: " + politics[politicsValue] + "\n" + " Primordial Origins: " + "\n" +"Sol: 96.78%"+ "\n" + "Blue Snowball Nebula: 1.38%" + "\n" + "Other: 1.84%"
       charSheet = "Your Name: " + characterName + "\n" + "\n" + sendstring + attributes + "\n" + "\n" + "Your Interests: "+ "\n" + theInterests+ "\n"+ "\n"+ "Your Future: "  + "\n"+ prediction;
       console.log(charSheet);
       f_name = 'Prediction'+characterName+'.txt';
