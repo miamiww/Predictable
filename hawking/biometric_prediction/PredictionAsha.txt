@@ -1,0 +1,27 @@
+Your Name: Asha
+
+Gender: female
+ Glasses: true
+ Smiling: true
+ Age: 42
+ Mood: disgusted
+  Eyes: open
+ Lips: parted
+ Politics: left
+ Primordial Origins: 
+Sol: 96.78%
+Blue Snowball Nebula: 1.38%
+Other: 1.84%
+
+Your Interests: 
+Veterans
+Environmentalism
+Economics
+Association football (Soccer)
+Motherhood
+
+
+Your Future: 
+Victory is a certainty
+Change your ways or suffer the consequences
+A powerful man may play a role in your day
