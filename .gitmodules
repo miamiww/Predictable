@@ -10,3 +10,6 @@
 [submodule "hawking/face_generator"]
 	path = hawking/face_generator
 	url = https://github.com/miamiww/face_generator.git
+[submodule "future.click"]
+	path = future.click
+	url = https://github.com/miamiww/future.click
