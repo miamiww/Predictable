@@ -8,16 +8,17 @@ Usage:
 from setuptools import setup
 
 APP = ['AutoSearcher.py']
-DATA_FILES = []
+DATA_FILES = ['icon_small.icns']
 OPTIONS = {
     'argv_emulation': True,
-    'iconfile':'icon.icns',
-    'includes': ['selenium'],
+    'iconfile':'icon_small.icns',
+    'includes': ['selenium','tkinter'],
     'plist': {
         'PyRuntimeLocations': [
-        '/Users/aljones/anaconda3/lib/libpython3.7m.dylib'
-        ],
-        'iconfile': '/Users/aljones/ITP/Year2/2Semester/Thesis/hawking/auto_searcher/icon.icns'
+        '/Users/aljones/anaconda3/lib/libpython3.7m.dylib',
+        '@executable_path/../Frameworks/libpython3.7m.dylib',
+        '/usr/bin/python'
+        ]
 }}
 
 setup(

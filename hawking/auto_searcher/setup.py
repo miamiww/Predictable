@@ -12,13 +12,14 @@ DATA_FILES = ['icon_small.icns']
 OPTIONS = {
     'argv_emulation': True,
     'iconfile':'icon_small.icns',
-    'includes': ['selenium'],
+    'includes': ['selenium','tkinter'],
     'plist': {
         'PyRuntimeLocations': [
         '/Users/aljones/anaconda3/lib/libpython3.7m.dylib',
-        '/usr/bin/python'
-        ],
-        'iconfile': '/Users/aljones/ITP/Year2/2Semester/Thesis/hawking/auto_searcher/icon_small.icns'
+        '@executable_path/../Frameworks/libpython3.7.dylib',
+        '@executable_path/../Frameworks/libpython3.7m.dylib'
+
+        ]
 }}
 
 setup(

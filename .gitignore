@@ -2,6 +2,6 @@
 config.js
 node_modules
 *.csv
-
+*.pkl
 venv*
 Python-Thermal-Printer

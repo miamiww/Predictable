@@ -77,7 +77,8 @@
 	<key>PyRuntimeLocations</key>
 	<array>
 		<string>/Users/aljones/anaconda3/lib/libpython3.7m.dylib</string>
-		<string>/usr/bin/python</string>
+		<string>@executable_path/../Frameworks/libpython3.7.dylib</string>
+		<string>@executable_path/../Frameworks/libpython3.7m.dylib</string>
 	</array>
 	<key>PythonInfoDict</key>
 	<dict>
@@ -98,7 +99,5 @@
 			<string>0.19</string>
 		</dict>
 	</dict>
-	<key>iconfile</key>
-	<string>/Users/aljones/ITP/Year2/2Semester/Thesis/hawking/auto_searcher/icon_small.icns</string>
 </dict>
 </plist>
