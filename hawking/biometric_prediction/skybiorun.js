@@ -373,7 +373,7 @@ var opts = {
     quality: 100,
     output: "jpeg",
     verbose: true,
-    device: "USB Camera"// "Webcam C170"
+    device: "HD Pro Webcam C920"// "Webcam C170"
 }
 
 let prediction="";
@@ -418,10 +418,10 @@ const sendPicture = () => {
       //facial attributes get printed out here
       var signValue = random.int(min=0,max=11);
       var politicsValue = random.int(min=0,max=3);
-      let sendstring = "Future's Market thanks you for making a successful purchase :) \n\n" +  "Gender: " + parsedresults.photos[0].tags[0].attributes.gender.value + "\n" + " Glasses: " + parsedresults.photos[0].tags[0].attributes.glasses.value + "\n" + " Smiling: " + parsedresults.photos[0].tags[0].attributes.glasses.value + "\n" + " Age: " + parsedresults.photos[0].tags[0].attributes.age_est.value + "\n" + " Mood: " + parsedresults.photos[0].tags[0].attributes.mood.value + "\n" + "  Eyes: " + parsedresults.photos[0].tags[0].attributes.eyes.value + "\n" + " Lips: " + parsedresults.photos[0].tags[0].attributes.lips.value;
+      let sendstring = "Future's Market thanks you for making a successful purchase :) \nhttp://future.click\n\n" +  "Gender: " + parsedresults.photos[0].tags[0].attributes.gender.value + "\n" + " Glasses: " + parsedresults.photos[0].tags[0].attributes.glasses.value + "\n" + " Smiling: " + parsedresults.photos[0].tags[0].attributes.glasses.value + "\n" + " Age: " + parsedresults.photos[0].tags[0].attributes.age_est.value + "\n" + " Mood: " + parsedresults.photos[0].tags[0].attributes.mood.value + "\n" + "  Eyes: " + parsedresults.photos[0].tags[0].attributes.eyes.value + "\n" + " Lips: " + parsedresults.photos[0].tags[0].attributes.lips.value;
       // console.log(sendstring);
       let attributes = "\n" + " Politics: " + politics[politicsValue] + "\n" + " Primordial Origins: " + "\n" +"Sol: 96.78%"+ "\n" + "Blue Snowball Nebula: 1.38%" + "\n" + "Other: 1.84%"
-      charSheet = "Your Name: " + characterName + "\n" + "\n" + sendstring + attributes + "\n" + "\n" + "Your Interests: "+ "\n" + theInterests+ "\n"+ "\n"+ "Your Future: "  + "\n"+ prediction;
+      charSheet = "\n\nYour Name: " + characterName + "\n" + "\n" + sendstring + attributes + "\n" + "\n" + "Your Interests: "+ "\n" + theInterests+ "\n"+ "\n"+ "Your Future: "  + "\n"+ prediction;
       console.log(charSheet);
       f_name = 'Prediction'+characterName+'.txt';
       //writes a file with the character sheet and then prints it out as a callback function

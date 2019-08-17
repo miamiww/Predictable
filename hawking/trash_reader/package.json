@@ -1,0 +1,23 @@
+{
+  "name": "identityreassignment",
+  "version": "1.0.0",
+  "description": "something for my thesis",
+  "main": "characterGenerator.js",
+  "dependencies": {
+    "random": "^2.0.13"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miamiww/identity_reassignment.git"
+  },
+  "author": "alden jones",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/miamiww/identity_reassignment/issues"
+  },
+  "homepage": "https://github.com/miamiww/identity_reassignment#readme"
+}

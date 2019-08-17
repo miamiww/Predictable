@@ -373,7 +373,7 @@ var opts = {
     quality: 100,
     output: "jpeg",
     verbose: true,
-    device: "USB Camera"// "Webcam C170"
+    device: "HD Pro Webcam C920"// "Webcam C170"
 }
 
 let prediction="";
