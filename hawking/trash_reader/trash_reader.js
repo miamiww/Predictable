@@ -1,41 +1,29 @@
 const random = require('random');
 const util = require('util');
 const fs = require('fs');
-var briggs = JSON.parse(fs.readFileSync('briggsmeyer.json', 'utf8'));
 let characterName = process.argv[2];
 let objectName = process.argv[3];
 
+const mantras = JSON.parse(fs.readFileSync('personality_test.json', 'utf8'));
 
-let personality_number = random.int(min=0, max=15)
-let type = briggs.personalities[personality_number].name
-let description = briggs.personalities[personality_number].description
 
-// likes="";
-// dislikes="";
-// for(var i=0;i<3;i++){
-// 	let likesTop = random.int(min=1, max=70);
-// 	let likeR = random.int(min=0, max=3);
-// 	likes = likes + interpretations.tarot_interpretations[likesTop].meanings.shadow[likeR] +"\n";
-// 	dislikes = dislikes + interpretations.tarot_interpretations[likesTop].meanings.light[likeR] +"\n";
-// }
-
-	
-// console.log("Your Name: " + characterName)
-// console.log("Position: " + yourJob);
-// console.log("")
-// console.log("All characterists on 1-10 scale: 1 is low and 10 is high");
-// console.log(character_stats);
-// console.log("Your likes: "+ "\n" + likes);
-// console.log("Your dislikes: "+ "\n" + dislikes);
-
-// console.log("installed printers:\n"+util.inspect(printer.getPrinters(), {colors:true, depth:10}));
-
+let personality_number = random.int(min=0, max=300)
+let mantra = mantras.personality_test[personality_number]
+mantra = "\""+mantra+ "\""
+console.log(mantra)
 
 var logo_text = "\n\nFuture's Market thanks you for making a successful purchase :) \nhttp://future.click\n\n"
 
-charSheet = logo_text + "Your Name: " + characterName + "\n" +"Your trash object: " + objectName+"\n\n" +characterName + ", you are a " +type + "\n" + description;
+charSheet = logo_text + "Your Name: " + characterName + "\n" +"Your trash object: " + objectName+"\n\n" +characterName + ", this is your mantra:"  +"\n\n" +mantra;
+charSheet = charSheet + "\n\n" + "For best results, repeat your mantra thrice daily at 9AM, 12PM, and 9PM."
+charSheet = charSheet + "\n" + "That's thrice daily as in, you say it three times each and every day, but each time you say it you only need to say it once."
+charSheet = charSheet + "\n" + "So at 9AM you say " + mantra + " (only once), and then once again at noon and 9PM, each time only once. I don't know what happens if you say it more than that each time, I've never tried it myself. If you do try it could you let me know what happens?" 
+
+charSheet = charSheet + "\n\n" + "Anyway, good luck!"
+charSheet = charSheet + "\n\n"
+
 console.log(charSheet);
-f_name = 'CharacterSheet'+characterName+'.txt';
+f_name = characterName+'CharacterSheet'+'.txt';
 //writes a file with the character sheet and then prints it out as a callback function
 fs.writeFile(f_name, charSheet, (err) => {  
     // throws an error, you could also catch it here
