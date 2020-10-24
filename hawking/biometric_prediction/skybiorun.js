@@ -99,7 +99,7 @@ const sendPicture = () => {
       let sendstring = "Future's Market thanks you for making a successful purchase :) \nhttp://future.click\n\n" +  "Gender: " + parsedresults.photos[0].tags[0].attributes.gender.value + "\n" + "Glasses: " + parsedresults.photos[0].tags[0].attributes.glasses.value + "\n" + "Smiling: " + parsedresults.photos[0].tags[0].attributes.glasses.value + "\n" + "Age: " + parsedresults.photos[0].tags[0].attributes.age_est.value + "\n" + "Mood: " + parsedresults.photos[0].tags[0].attributes.mood.value + "\n" + "Eyes: " + parsedresults.photos[0].tags[0].attributes.eyes.value + "\n" + "Lips: " + parsedresults.photos[0].tags[0].attributes.lips.value;
       // console.log(sendstring);
       let attributes = "\n" + "Personality: " + personality + "\n" + "Politics: " + politicsValue + "\n" + "Primordial Origins: " + "\n" +"  Sol: 96.78%"+ "\n  " + origin+": 1.38%" + "\n" + "  Other: 1.84%"
-      charSheet = "Your Name: " + characterName + "\n" + "\n" + sendstring + attributes + "\n"+ "\n"+ "Scenes From Your Future: "  + "\n"+ prediction +"\n\n";
+      charSheet = "\n\nYour Name: " + characterName + "\n" + "\n" + sendstring + attributes + "\n"+ "\n"+ "Scenes From Your Future: "  + "\n"+ prediction +"\n\n";
       console.log(charSheet);
       f_name = characterName +'Prediction.txt';
       //writes a file with the character sheet and then prints it out as a callback function
