@@ -18,7 +18,7 @@
     "p5": "^0.5.8",
     "random": "^2.1.1",
     "skybiometry": "^1.2.1",
-    "socket.io": "^2.2.0",
+    "socket.io": "^2.5.0",
     "socket.io-client": "^2.2.0"
   }
 }
